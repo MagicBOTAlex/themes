@@ -170,7 +170,7 @@
 		}
 	}
 
-	.dark\:prose-invert:is(.dark *) :where(code):not(:where([class~=not-prose] *)) {
+	.dark\:prose-invert:is(.dark *) :where(code):not([class*="language-"], :where(.not-prose *) {
 		background-color: var(--disabled-button-bg);
 	}
 }
